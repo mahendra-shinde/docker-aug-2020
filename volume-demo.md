@@ -69,7 +69,7 @@ docker run -v [HostPath]:[GuestPath]:[MountOption] [Other-Options] [Image-Name] 
 2. Create and launch "IIS" container with volume binding to "C:\data" directory as "C:\inetpub\wwwroot"
 
 ```
-$ docker run -d -p 8081:80 --name c1 -v c:\data:c:\inetput\wwwroot:ro mcr.microsoft.com/windows/servercore/iis 
+$ docker run -d -p 8081:80 --name c1 -v c:\data:c:\inetpub\wwwroot:ro mcr.microsoft.com/windows/servercore/iis 
 $ start firefox http://localhost:8081/
 ```
 
