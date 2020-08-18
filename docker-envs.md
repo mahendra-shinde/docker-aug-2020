@@ -35,7 +35,7 @@ $ docker rm db1
 
 ```
 ## Download the env file
-$ wget -usebasicparsing https://raw.githubusercontent.com/mahendra-shinde/docker-aug-2020/master/dbenvs.txt
+$ wget -usebasicparsing https://raw.githubusercontent.com/mahendra-shinde/docker-aug-2020/master/dbenvs.txt -outfile .\dbenvs.txt
 $  docker run --name db1 -d -p 3306:3306 --env-file "dbenvs.txt" mysql
 ## Wait for 1 minute and then view logs
 $ docker logs 
