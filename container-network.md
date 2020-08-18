@@ -30,7 +30,7 @@
 $ docker run --name c1 -d  --net none nginx
 $ docker run --name c2 -d  --net none nginx
 $ docker exec -it c1 hostname -i
-$ docker exec -it c2 hostname -o
+$ docker exec -it c2 hostname -i
 ## Both containers would have no IP address
 ## Which means containers are NOT part of any network!
 $ docker rm -f c1 c2
