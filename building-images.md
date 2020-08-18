@@ -33,3 +33,12 @@ $ docker ps
 ```pwsh
 $ docker rm -f $(docker ps -aq)
 ```
+
+## Additional task
+
+* download following images
+- tomcat
+- mysql
+- node:slim
+
+* Inspect above three images and check their "CMD" attribute

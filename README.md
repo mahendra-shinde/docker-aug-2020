@@ -5,4 +5,3 @@ Docker for MorningStar
 
 - [docker-cli reference](https://docs.docker.com/engine/reference/commandline/docker/)
 
-- 
