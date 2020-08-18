@@ -11,6 +11,9 @@
 * Containers have an Entry-point or Command to run when they launch
 * Containers have "Main" process defined by "CMD" or "EntryPoint"
 
+
+> Use "powershell" for running all commands.
+
 ```
 ## docker run [options] [image] [CMD/EntryPoint]
 $ docker run -p 8081:80 -d nginx:alpine sh

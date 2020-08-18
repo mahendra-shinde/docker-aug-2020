@@ -1,0 +1,5 @@
+### ENV file with Key Value pairs
+MYSQL_USER=mahendra
+MYSQL_PASSWORD=pass@12345
+MYSQL_ROOT_PASSWORD=pass@123232
+MYSQL_DATABASE=data1
