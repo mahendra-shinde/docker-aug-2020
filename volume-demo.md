@@ -78,7 +78,7 @@ $ start firefox http://localhost:8081/
 4.  repeate the following command:
 
 ```
-$ start firefox http://localhost:8081
+$ start firefox http://localhost:8081/index.html
 ```
 
 5. Clean-up: delete container 'c1'
