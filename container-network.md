@@ -22,7 +22,6 @@
   ex: docker network inspect net1
 ```
 
-
 ## Network driver "null", network name "none"
 
 ```
@@ -55,13 +54,11 @@ $ docker rm -f c1 c2
 ```
 $ docker run --name c1 -d  --net bridge nginx
 $ docker run --name c2 -d  --net bridge nginx
-$ docker exec -it c1 ifconfig
-$ docker exec -it c2 ifconfig
+$ docker exec -it c1 hostname -i
+$ docker exec -it c2 hostname -i
 ## Both containers would have different IP address
 ## Which means containers are member of BRIDGE network
 ### They can COMMUNICATE with each other 
-$ docker exec -it c1 hostname -i
-$ docker exec -it c2 hostname -i
 ## Store IP address of "c2" into Powershell Variable
 $  $c2ip=$(docker exec -it c2 hostname -i)
 $  docker exec -it c1 curl $c2ip
