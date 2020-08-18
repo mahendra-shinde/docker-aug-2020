@@ -10,8 +10,8 @@
 - docker network ls
 
 # create a new network
-- docker network create -n {NAME} -d {driver} --subnet {CIDR-Range}
-  ex: docker network create -n net1 -d bridge --subnet 10.0.0.0/16
+- docker network create  {NAME} -d {driver} --subnet {CIDR-Range}
+  ex: docker network create  net1 -d bridge --subnet 10.0.0.0/16
 
 # delete an existing network (Must not have any containers!)
 - docker network rm {NAME}
@@ -31,7 +31,7 @@ $ docker run --name c1 -d  --net none nginx
 $ docker run --name c2 -d  --net none nginx
 $ docker exec -it c1 hostname -i
 $ docker exec -it c2 hostname -i
-## Both containers would have no IP address
+## Both containers would have no IP address (ERROR: Temporary Failure in Name resolution)
 ## Which means containers are NOT part of any network!
 $ docker rm -f c1 c2
 ```
