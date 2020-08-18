@@ -31,10 +31,11 @@ $ docker stop db1
 $ docker rm db1
 ```
 
-### Alternate method of passing multiple envs from file
+### Alternate method of passing multiple envs from file (Use powershell only!)
 
 ```
-
+## Download the env file
+$ wget -usebasicparsing https://raw.githubusercontent.com/mahendra-shinde/docker-aug-2020/master/dbenvs.txt
 $  docker run --name db1 -d -p 3306:3306 --env-file "dbenvs.txt" mysql
 ## Wait for 1 minute and then view logs
 $ docker logs 
