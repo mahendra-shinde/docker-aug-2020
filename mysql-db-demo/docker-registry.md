@@ -55,3 +55,11 @@ $ docker tag myapp:1 mahendra.azurecr.io/myapp:1
 $ docker push mahendra.azurecr.io/myapp:1
 ## Where, 'mahendra.azurecr.io/' is hosted registry url
 ```
+
+4.  Docker push
+
+```
+$ docker pull nginx
+$ docker tag nginx mahendrshinde/nginx
+$ docker push mahendrshinde/nginx
+```
